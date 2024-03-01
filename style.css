@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Libre Franklin;
+    scroll-behavior: smooth;
+}
+
+.main {
+    background-color: #e8e8e8;
+}
+
+.nav {
+    background-color: #d5c3b4;
+    box-shadow: 0px 1px 6px 3px rgba(0, 0, 0, .2);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+
+
+.nav-bar {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    padding: 1.6rem;
+    align-items: center;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    color: #5d5e5d;
+
+}
+
+.nav-bar a:hover {
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 12px #cf8d56;
+}
+
+
+
+.left-side ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+
+}
+
+.hero-section {
+
+
+    width: 60%;
+    display: flex;
+    gap: 3rem;
+    margin: auto;
+
+}
+
+.hero-img {
+    margin: 11rem 0;
+    display: flex;
+    align-items: center;
+    flex: 5;
+
+}
+
+
+.hero-img img {
+    width: 70%;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
+
+.hero-img img {
+    --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
+    --m:
+        left var(--_i, 0%) top var(--_g),
+        bottom var(--_i, 0%) left var(--_g),
+        top var(--_i, 0%) right var(--_g),
+        right var(--_i, 0%) bottom var(--_g);
+    -webkit-mask: var(--m);
+    mask: var(--m);
+    filter: grayscale();
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+.hero-img img:hover {
+    --_i: 10%;
+    filter: grayscale(0);
+}
+
+.hero-head {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    line-height: 4rem;
+}
+
+
+.hero-button {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.hero-button button {
+    font-size: 1rem;
+    border: 1px solid #d5c3b4;
+    border-radius: 20px;
+    padding: 0.6rem 2rem;
+    font-weight: bold;
+    transition: 0.4s;
+    cursor: pointer;
+
+}
+
+.btn-cv:hover {
+    background-color: #d5c3b4;
+    border: 1px solid #a39487;
+}
+
+.btn-contact {
+    background-color: #d5c3b4;
+    border: 1px solid #a39487 !important;
+}
+
+.hero-button button:active {
+    background-color: #cf8d56;
+}
+
+.logos {
+    display: flex;
+    gap: 1rem;
+}
+
+.logos a {
+    display: flex;
+    height: 3rem;
+    justify-content: center;
+
+}
+
+
+.about-container {
+
+    border: 2px solid #cf8d56;
+    width: 85%;
+    margin: auto;
+    padding: 2rem;
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: #d0ccc9;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.about-head p:nth-child(even) {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #5d5e5d;
+    margin: 1rem;
+}
+
+.about-head p:nth-child(odd) {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #5d5e5d;
+}
+
+.about-me {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+
+
+}
+
+.about-me-image img {
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    overflow: hidden;
+    animation: morph 7s linear infinite;
+    box-shadow: -8px 6px 21px -1px #cf8d56;
+    width: 70%;
+    height: fit-content;
+}
+
+
+
+@keyframes morph {
+
+    0%,
+    100% {
+        border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+    }
+
+    34% {
+        border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+    }
+
+    67% {
+        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    }
+}
+
+.about-me-image {
+    padding: 0 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    flex: 4;
+
+
+}
+
+
+
+.about-me-content {
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 2rem;
+    gap: 2rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.cards div {
+    border: 2px solid #cf8d56;
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+    background-color: #d5c3b4;
+    border-radius: 20px;
+    line-height: 2rem;
+}
+
+.cards img {
+    width: 10%;
+}
+
+.about {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+}
+
+.project {
+    padding-top: 9rem;
+}
+
+.projects {
+    padding-top: 2rem;
+
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    gap: 4rem;
+
+}
+
+.exxen,
+.disney {
+    border: 2px solid #a39487;
+    width: 82%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+.project img {
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+.disney-img,
+.exxen-img {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.project-test {
+    text-align: center;
+}
+
+.project p {
+
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.project button {
+    font-size: 1.1rem;
+    border: 1px solid #d5c3b4;
+    border-radius: 20px;
+    padding: 1rem 3rem;
+    font-weight: bold;
+    transition: 0.4s;
+    cursor: pointer;
+    margin: 1rem;
+
+}
+
+.project button:hover {
+    background-color: #d5c3b4;
+    border: 1px solid #a39487;
+}
+
+.project button:active {
+    background-color: #cf8d56;
+}
+
+.contact {
+    text-align: center;
+    padding: 5rem;
+    margin-top: 6rem;
+
+
+}
+
+.contact a,
+span {
+    text-decoration: none;
+    color: #662f00;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding-top: 0.6rem;
+
+}
+
+.contact span {
+    display: block;
+
+}
+
+hr {
+    width: 40%;
+    border-style: solid;
+    color: #662f00;
+    border-width: 2px;
+    margin: 1rem auto;
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .hero-img img {
+        width: 80%;
+
+    }
+
+    .hero-section {
+        width: 80%;
+    }
+}
+
+
+
+@media only screen and (max-width: 935px) {
+
+    .nav {
+        display: none;
+    }
+
+    .hero-section {
+        width: 67%;
+
+    }
+
+
+    .about {
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        width: 80%;
+        margin: auto;
+    }
+
+    .about-me {
+        display: block;
+
+    }
+
+    .about-me-content {
+        padding-right: 0;
+    }
+
+    .about-me-image img {
+        width: 50%;
+        margin-bottom: 1rem
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .hero-img {
+        display: none;
+    }
+
+    .hero-section {
+        padding: 4rem 0 3rem;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+
+    .cards {
+        display: block;
+    }
+
+    .projects {
+        display: block;
+    }
+
+    .exxen {
+        margin-bottom: 2rem;
+    }
+
+
+}
